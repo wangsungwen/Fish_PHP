@@ -47,6 +47,7 @@ sudo ./setup.sh
 進入專案資料夾並執行配置腳本 因為在 WSL 裡面，C: 碟會被放在 /mnt/c/ 路徑下，複製貼上以下指令到剛打開的 Ubuntu 視窗中並按下 Enter 執行：
 
 bash
+
 cd /mnt/c/Users/wangs/Fish_PHP/cloud_fish_system
 
 sudo apt-get update
