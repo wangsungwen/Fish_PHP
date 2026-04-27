@@ -21,8 +21,6 @@ Windows 管理員權限要求 (UAC)，請點選「是」。
 
 在 WSL (Ubuntu) 裡面，Windows C: 碟會被掛載在 /mnt/c/。在設定完帳號後，於 Ubuntu 終端機內輸入以下指令：
 
-bash
-
 # 切換到 Windows 專案目錄下
 
 cd /mnt/c/Users/wangs/Fish_PHP/cloud_fish_system
@@ -45,8 +43,6 @@ sudo ./setup.sh
 點開它即可開啟黑色的 Linux 終端機畫面。
 
 進入專案資料夾並執行配置腳本 因為在 WSL 裡面，C: 碟會被放在 /mnt/c/ 路徑下，複製貼上以下指令到剛打開的 Ubuntu 視窗中並按下 Enter 執行：
-
-bash
 
 cd /mnt/c/Users/wangs/Fish_PHP/cloud_fish_system
 
@@ -76,19 +72,13 @@ sudo ./setup.sh
 
 重新啟動網頁伺服器 (Apache)
 
-bash
-
 sudo systemctl restart apache2
 
 重新啟動背景 MQTT 監聽程式
 
-bash
-
 sudo systemctl restart cloud_fish.service
 
 查看背景服務是否發生錯誤或其輸出日誌
-
-bash
 
 sudo journalctl -u cloud_fish.service -f
 
