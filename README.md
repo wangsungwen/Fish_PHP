@@ -30,12 +30,15 @@ cd /mnt/c/Users/wangs/Fish_PHP/cloud_fish_system
 # 轉換腳本的換行字元 (避免 Windows 換行符號造成 Linux 腳本報錯)
 
 sudo apt-get install dos2unix
+
 dos2unix setup.sh
 
 # 賦予執行權限並執行
 
 chmod +x setup.sh
+
 sudo ./setup.sh
+
 這樣就能在 Windows 上完美模擬出 Linux 環境並執行伺服器程式碼！
 
 接下來只需要開啟 Ubuntu 終端機 按一下鍵盤的 Windows 鍵（或是點擊畫面左下角的開始按鈕），直接輸入「Ubuntu」或「WSL」，就會看到對應的應用程式。
@@ -45,10 +48,15 @@ sudo ./setup.sh
 
 bash
 cd /mnt/c/Users/wangs/Fish_PHP/cloud_fish_system
+
 sudo apt-get update
+
 sudo apt-get install -y dos2unix
+
 dos2unix setup.sh
+
 chmod +x setup.sh
+
 sudo ./setup.sh
 
 (備註：執行 sudo 時如果要求輸入密碼，請輸入您當初安裝 Ubuntu 時設定的密碼即可，輸入時畫面上不會顯示字元是正常的)
@@ -68,16 +76,19 @@ sudo ./setup.sh
 重新啟動網頁伺服器 (Apache)
 
 bash
+
 sudo systemctl restart apache2
 
 重新啟動背景 MQTT 監聽程式
 
 bash
+
 sudo systemctl restart cloud_fish.service
 
 查看背景服務是否發生錯誤或其輸出日誌
 
 bash
+
 sudo journalctl -u cloud_fish.service -f
 
 (提示：如果您未來將專案轉移到獨立的 Raspberry Pi 上，只需把上面的 localhost 替換成該台區網 IP 位址即可！)
