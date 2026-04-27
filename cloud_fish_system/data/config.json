@@ -1,0 +1,12 @@
+{
+    "uuid_pump_feeder": "1afe34d3020b",
+    "uuid_light": "a220a61487a6",
+    "rtsp_url": "https:\/\/www.homeyes.com.tw:8443\/_cam2\/?controls=0&autoplay=1",
+    "rtsp_url_2": "https:\/\/www.homeyes.com.tw:8443\/_cam3\/?controls=0&autoplay=1",
+    "telegram_bot_token": "8599794674:AAHEZhOtsUd4khTR1_HDtae9tn190Ip1XOU",
+    "telegram_chat_id": "8357342837",
+    "mqtt_broker": "mqttgo.io",
+    "mqtt_port": "8084",
+    "topic_sensors": "ttu_fish\/sensors",
+    "thingspeak_api_key": ""
+}
