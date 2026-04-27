@@ -8,5 +8,5 @@
     "mqtt_broker": "mqttgo.io",
     "mqtt_port": "8084",
     "topic_sensors": "ttu_fish\/sensors",
-    "thingspeak_api_key": ""
+    "thingspeak_api_key": "X7R6GEYXQDDMWEZP"
 }
