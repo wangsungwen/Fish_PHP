@@ -6,7 +6,8 @@
 
 ### 安裝環境
 
-請允許執行我為您準備的 wsl --install 指令。這可能會跳出 Windows 的管理員權限要求 (UAC)，請點選「是」。
+wsl --install 指令。
+Windows 管理員權限要求 (UAC)，請點選「是」。
 
 ### 重新開機
 
@@ -18,11 +19,11 @@
 
 ### 進入專案目錄並執行指令
 
-在 WSL (Ubuntu) 裡面，您的 Windows C: 碟會被掛載在 /mnt/c/。請在設定完帳號後，於 Ubuntu 終端機內輸入以下指令：
+在 WSL (Ubuntu) 裡面，Windows C: 碟會被掛載在 /mnt/c/。請在設定完帳號後，於 Ubuntu 終端機內輸入以下指令：
 
 bash
 
-# 切換到您的 Windows 專案目錄下
+# 切換到 Windows 專案目錄下
 
 cd /mnt/c/Users/wangs/Fish_PHP/cloud_fish_system
 
@@ -52,14 +53,11 @@ sudo ./setup.sh
 
 這樣就可以順利在您的 Windows 上跑起這個原生的 Linux 服務環境了！
 
-在剛剛的
+在剛剛的 setup.sh 腳本中，已經設定好並自動啟動 Apache 網頁伺服器，所以只要腳本順利跑完，網頁服務其實就已經在運作中！
 
-setup.sh
- 腳本中，已經幫您設定好並自動啟動了 Apache 網頁伺服器，所以只要腳本順利跑完，網頁服務其實就已經在運作中了！
+只需要在 Windows 電腦上打開瀏覽器（如 Chrome、Edge 等），然後在網址列輸入以下網址即可看到剛架好的網頁：
 
-您只需要在您的 Windows 電腦上打開瀏覽器（如 Chrome、Edge 等），然後在網址列輸入以下網址即可看到剛架好的網頁：
-
-👉 <http://localhost/cloud_fish_system/php/html/> （或輸入 <http://127.0.0.1/cloud_fish_system/php/html/）>
+👉 <http://localhost/cloud_fish_system/php/html/> （或輸入 <http://127.0.0.1/cloud_fish_system/php/html/> )
 
 日常維護指令（在 Ubuntu 終端機內執行即可）
 若您後續有修改網頁檔案或需要重啟服務，可以參考以下常用指令：
