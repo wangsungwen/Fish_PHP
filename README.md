@@ -1,4 +1,6 @@
-# Windows 上建立虛擬 Linux 環境，微軟官方最推薦且效能最好的方式是使用 WSL (Windows Subsystem for Linux)
+# 🐟 魚菜共生智慧管理平台 (AIoT Aquaponics System) v2.5
+
+**整合 ThingSpeak 雲端大數據、Telegram 智慧告警與 MQTT 自動化控制的完整解決方案。**
 
 ## 安裝與後續步驟說明
 
