@@ -1,0 +1,19 @@
+[Unit]
+Description=Cloud Fish PHP MQTT Daemon
+After=network.target
+
+[Service]
+Type=simple
+# 若確保沒有權限問題，此處可用 root，或可改用 www-data，端看您 db.php 如何設定
+User=root
+WorkingDirectory=/var/www/html/cloud_fish_system/php
+ExecStart=/usr/bin/php /var/www/html/cloud_fish_system/php/daemon.php
+Restart=always
+RestartSec=5
+
+# 如果您想把 PHP 的 echo 輸出寫入系統特定位置
+# StandardOutput=append:/var/log/cloud_fish_daemon.log
+# StandardError=append:/var/log/cloud_fish_daemon_error.log
+
+[Install]
+WantedBy=multi-user.target
